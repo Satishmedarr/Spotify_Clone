@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="logo.png" type="png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- main -->
+   <div class="main">
+    <!-- sidebar -->
+       <div class="sidebar">
+
+            <div class="nav">
+                <div class="nav-option">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option" id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+
+            <!-- Library -->
+
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                  <div class="boxes">
+                    <div class="box1">
+                        <p class="p1">Create your first playlist</p>
+                        <p class="p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box1">
+                        <p class="p1">Let's find some podcasts to follow</p>
+                        <p class="p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                    <div class="box1 box3">
+                        <p class="p1">Buy Premium @50% off</p>
+                        <p class="p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Buy now</button>
+                    </div>
+                    
+                  </div>
+                
+            </div>
+</div>
+            <div class="music">
+
+
+                <div class="music1">
+                    <div class="img">
+                        <img src="images.jpeg" alt="">
+                    </div>
+
+                    <div class="text">
+                        <a href="#" class="song">Machayenge</a>
+                        <a href="#" class="art">Emiway Bantai</a>
+                    </div>
+
+                    <div class="icon">
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+                </div>
+
+
+                <div class="music2">
+                    <div class="player">
+                        <img class="loop" src="player_icon1.png" alt="">
+                        <img src="player_icon2.png" alt="">
+                        <img class="play" src="play_musicbar.png" alt="">
+                        <img src="player_icon4.png" alt="">
+                        <img class="loop" src="player_icon5.png" alt="">
+                    </div>
+
+                    <div class="range">
+
+                        <p>1:15</p>
+                        <progress max="100" value="30"></progress>
+                        <p>3:25</p>
+                    </div>
+                </div>
+
+
+                <div class="music3">
+                    <i class="fa-solid fa-microphone"></i>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" min="0" max="11" step="1">
+                    <i class="fa-solid fa-laptop"></i>
+                    <i class="fa-solid fa-headphones"></i>
+                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </div>
+
+            </div>
+       <!-- main content -->
+       <div class="main_content">
+         <div class="sticky-navbar">
+            <div class="arrows">
+                <i class="fa-solid fa-chevron-left"></i>
+                <i class="fa-solid fa-chevron-right hide"></i>
+            </div>
+            <div class="badges">
+                <button class="badge hide">Explore Pemium</button>
+                
+
+                <div class="btn-badge">
+                    <button class="db">
+                     <i class="fa-regular fa-circle-down"></i>Install App
+                    </button>
+
+                 </div>
+                    <div class="user-bell">
+                    <i class="fa-regular fa-bell" ></i>
+                <i class="fa-regular fa-user"></i>
+            </div>
+            </div>
+          </div>
+
+          <!-- cards -->
+            <div class="outer">
+                <h3>Recently Played</h3>
+              <div class="inner">
+                
+                 <div class="card">
+                   
+                        <img src="emiway1.jpg" class="card-img" alt="">
+                        <p class="card-tittle">This is Emiway Bantai</p>
+                        <p class="para">Your daily updates of the most played tracks</p>
+                 
+                 </div>
+
+                 <div class="card">
+                   
+                    <img src="emiway2.jpeg" class="card-img" alt="">
+                    <p class="card-tittle">Top 50 - Global</p>
+                    <p class="para">Feel the rhythm with handpicked tracks just for</p>
+             
+             </div>
+
+             <div class="card">
+                   
+                <img src="emiway3.jpeg" class="card-img" alt="">
+                <p class="card-tittle">Still Number 1</p>
+                <p class="para">Discover the beats that rule your playlist daily</p>
+         
+         </div>
+
+         <div class="card">
+                   
+            <img src="emiway5.jpeg" class="card-img" alt="">
+            <p class="card-tittle">Royal Rumble</p>
+            <p class="para">Feel the vibe of the most hyped song now</p>
+     
+     </div>
+             
+              </div>
+
+
+              <h3>Trending now near you</h3>
+              <div class="inner">
+                
+                 <div class="card">
+                   
+                        <img src="card2img.jpeg" class="card-img" alt="">
+                        <p class="card-tittle">Top 50 - Global</p>
+                        <p class="para">Your daily updates of the most played tracks ...</p>
+                 
+                 </div>
+
+                 <div class="card">
+                   
+                    <img src="card3img.jpeg" class="card-img" alt="">
+                    <p class="card-tittle">Top 50 - Global</p>
+                    <p class="para">Your daily updates of the most played tracks ...</p>
+             
+                 </div>
+
+                 <div class="card">
+                   
+                    <img src="card4img.jpeg" class="card-img" alt="">
+                    <p class="card-tittle">Top 50 - India</p>
+                    <p class="para">Your daily updates of the most played tracks ...</p>
+             
+             </div>
+
+             <div class="card">
+                   
+                <img src="card2img.jpeg" class="card-img" alt="">
+                <p class="card-tittle">Top 50 - Global</p>
+                <p class="para">Your daily updates of the most played tracks ...</p>
+         
+             </div>
+                <div class="card">
+               
+                <img src="sherya.jpg" class="card-img" alt="">
+                <p class="card-tittle">Sherya Ghoshal</p>
+                <p class="para">Immerse yourself in the soulful melodies ruling the charts</p>
+         </div>
+
+         <div class="card">
+               
+            <img src="as.jpeg" class="card-img" alt="">
+            <p class="card-tittle">Arijit Singh</p>
+            <p class="para">Immerse yourself in the soulful melodies ruling the charts</p>
+     
+     </div>
+
+     <div class="card">
+               
+        <img src="mayavi1.jpg" class="card-img" alt="">
+        <p class="card-tittle">Mayavi</p>
+        <p class="para">Immerse yourself in the soulful melodies ruling the charts</p>
+ 
+            </div>
+        </div>
+
+
+        <h3>Featured Charts</h3>
+        <div class="inner">
+          
+           <div class="card">
+             
+                  <img src="card5img.jpeg" class="card-img" alt="">
+                  <p class="card-tittle">Top 50 - Global</p>
+                  <p class="para">Your daily updates of the most played tracks ...</p>
+           
+           </div>
+
+           <div class="card">
+             
+              <img src="card6img.jpeg" class="card-img" alt="">
+              <p class="card-tittle">Top 50 - Global</p>
+              <p class="para">Your daily updates of the most played tracks ...</p>
+       
+           </div>
+
+           <div class="card">
+             
+              <img src="card1img.jpeg" class="card-img" alt="">
+              <p class="card-tittle">Top 50 - Global</p>
+              <p class="para">Your daily updates of the most played tracks ...</p>
+       
+            
+           </div>
+    </div>
+        
+        <div class="line">
+             <div class="links">
+               <h4>Company</h4>
+               <a href="#"><h5>About</h5></a>
+               <a href="#"><h5>Jobs</h5></a>
+                <a href="#"><h5>For the Record</h5></a>
+             </div>
+
+             <div class="links">
+                <a href="#"><h4>Communities</h4></a>
+                <a href="#"><h5>For Artists</h5></a>
+                <a href="#"><h5>Developers</h5></a>
+                <a href="#"><h5>Advertising</h5></a>
+                <a href="#"><h5>Investors</h5></a>
+                <a href="#"><h5>Vendors</h5></a>
+             </div>
+             <div class="links">
+                   <h4>Useful Links</h4>
+                <a href="#"><h5>Support</h5></a>
+                <a href="#"><h5>Free Mobile App</h5></a>
+             </div>
+             <div class="links">
+                <h4>Spotify Plans</h4>
+                <a href="#"><h5>Premium Individual</h5></a>
+                <a href="#"><h5>Premium Duo</h5></a>
+                <a href="#"><h5>Premium Family</h5></a>
+                <a href="#"><h5>Premium Student</h5></a>
+                <a href="#"><h5>Spotify Free</h5></a>
+             </div>
+             <div class="links"></div>
+        
+        <div class="iconss">
+            <div id="fi"><i class="fa-brands fa-instagram"></i></div>
+            <div id="se"><i class="fa-brands fa-facebook"></i></div>
+            <div id="th"><i class="fa-brands fa-twitter"></i></div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="copy-right">
+                <div class="clinks">
+                <a  href="#"><h6 id="first">Legal</h6></a>
+                <a href="#"><h6>Safety & Privacy Center</h6></a>
+                <a href="#"><h6>Privacy Policy</h6></a>
+                <a href="#"><h6>Cookies</h6></a>
+                <a href="#"><h6>About Ads</h6></a>
+             </div>
+
+             <div class="cdlinks">
+                <a href="#"><h5>© 2025 Spotify AB</h5></a>
+             </div>
+      
+        </div>
+     </div>
+</body>
+</html>

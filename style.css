@@ -1,0 +1,687 @@
+* {
+    font-family: "Montserrat", serif;
+    /* background-color: black; */
+    color: white;
+    margin: 0;
+    overflow: hidden;
+}
+
+body{
+    background-color: black;
+}
+.main{
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar{
+    background-color: black;
+    width: 350px;
+    border-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin-bottom: 5rem;
+    /* border-bottom: 2px solid white; */
+}
+.main_content{
+    background-color: #292828;
+    flex:1;
+    border-radius: 1rem;
+    overflow: auto;
+    margin: 0.7rem;
+    margin-left: 0;
+    margin-bottom: 5rem;
+    
+   
+}
+.music{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+}
+
+a{
+    text-decoration: none;
+}
+.nav {
+    background-color: #474747;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+    margin: 0.7rem;
+}
+
+.nav-option{
+    line-height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option i{
+  font-size: 1.25rem;
+}
+.nav-option a{
+    font-size: 1.25rem;
+    margin-left: 1rem;
+}
+.nav #search{
+    opacity: 0.5;
+}
+.nav #search:hover{
+    opacity: 1;
+}
+
+.library{
+    background-color: #292828;
+    border-radius: 1rem;
+    margin: 0.7rem;
+    padding: 0.5rem 0.75rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 98vh;
+    
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option img {
+    height: 1.25rem;
+    
+}
+
+.lib-option{
+    opacity: 0.5;
+}
+.lib-option:hover{
+    opacity: 1;
+}
+
+.icons i{
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.box1{
+    background-color: #232323;
+    height: 7rem;
+    border-radius: 1rem;
+    padding: 0.5rem 0.6rem;
+    margin: 0.5rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    letter-spacing: 0.02rem;
+   
+}
+.box1 .p1{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.box1 .p2{
+    font-size: 0.8rem;
+    opacity: 0.8;
+    font-weight: 600;
+}
+.badge{
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 100px;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    /* margin-top: 0.5rem; */
+    height: 2rem;
+    width: fit-content;
+    letter-spacing: 0.02rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    cursor: pointer;
+}
+
+.dark-badge{
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+.btn-badge .db{
+    background-color: transparent;
+    border: none;
+    color: white;
+    display: flex;
+    width: 142px;
+    height: 32px;
+    align-items: center;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    justify-content: space-evenly;
+    padding: 0rem 1rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.btn-badge .db i{
+    font-size: 1.1rem;
+    margin-right: 0.4rem;
+}
+.sticky-navbar{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #616161;
+    z-index: 2;
+}
+.sticky-navbar .arrows i{
+ font-size: 1.5rem;
+ 
+}
+.sticky-navbar .badges{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.sticky-navbar .badges i{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.btn-badge .db:hover{
+    opacity: 1;
+    font-weight: 700;
+}
+
+.user-bell i{
+    margin-right: 1rem;
+}
+
+/* @media(max-width: 1000px){
+    .hide{
+        display: none;
+    }
+    .fa-chevron-right{
+        visibility: hidden;
+    }
+} */
+
+.card{
+    background-color: rgba(103, 103, 103, 0.1);
+    width: 160px;
+    border-radius: 0.8rem;
+    padding: 0.5rem;
+    margin: 1rem;
+
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-tittle{
+    margin-top: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.para{
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+    z-index: -1;
+}
+
+h3{
+    margin: 2.2rem;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    letter-spacing: 0.01rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    width: fit-content;
+}
+h3:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 1rem;
+    margin-top: 0;
+    flex-wrap: wrap;
+}
+
+.line{
+    height: 50%;
+    width: 70%;
+    /* padding: 0.5rem 0.5rem 0.5rem 2rem; */
+    margin-top: 6rem;
+    display: flex;
+    flex: 2 2 ;
+
+}
+
+.music{
+    display: flex;
+}
+.music1{
+    width: 25%;
+    background-color: black;
+    display: flex;
+    padding: 0rem 1rem;
+    padding-bottom: 1rem;
+}
+.music2{
+    width: 50%;
+    background-color: black;
+
+}
+
+.music3{
+    width: 25%;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+
+}
+.music3 i{
+       padding-right: 0.6rem;
+       font-size: 1rem;
+       opacity: 0.6;
+       cursor: pointer;
+}
+.music3 i:hover{
+    opacity: 1;
+}
+.img{
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+.img img{
+    height: 100%;
+    border-radius: 0.5rem;
+}
+.music .text .song{
+    font-size: 0.9rem;
+    font-weight: 650;
+    letter-spacing: 0.02rem;
+}
+
+.music .text .art{
+    font-size: 0.7rem;
+    font-weight: 580;
+    letter-spacing: 0.06rem;
+    opacity: 0.6;
+}
+.music .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.music .text .song:hover{
+      text-decoration: underline;
+      line-height: 1.2rem;
+}
+
+.music .text .art:hover{
+    text-decoration: underline;
+    line-height: 1.2rem;
+}
+.music .icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+
+.music3 .fa-volume-high{
+    padding-right: 0.2rem;
+    padding-left: 0.5rem;
+}
+
+.music2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.music2 .player img{
+    width: 1rem;
+    padding-right: 1.6rem;
+    cursor: pointer;
+
+}
+.music2 .range{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    /* opacity: 0.5; */
+}
+.music2 .range p{
+opacity: 0.5;
+}
+.music2 .range progress{
+    
+    margin: 0 1em;
+    width: 29rem;
+    cursor: pointer;
+    opacity: 0.5;
+    
+}
+.music2 .range progress:hover{
+       opacity: 1;
+}
+
+.music2 .player .play{
+    width: 2rem;
+}
+.music2 .player img{
+  opacity: 0.6;
+}
+.music2 .player .play{
+    opacity: 0.9;
+}
+.music2 .player .play:hover{
+    opacity: 1;
+}
+.music2 .player img:hover{
+   opacity: 1;
+}
+.music3 input{
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: #787777;
+    cursor: pointer;
+
+}
+
+.card .card-tittle:hover{
+    text-decoration: underline;
+    color: white;
+    opacity: 1;
+}
+.card p:hover{
+    color: white;
+    opacity: 1;
+}
+.box1:hover{
+    box-shadow: 0 0 10px white;
+    cursor: pointer;
+}
+.fa-solid:hover{
+    cursor: pointer;
+}
+.line{
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+}
+.links h5{
+    opacity: 0.5;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.links h5{
+    font-weight: 500;
+
+}
+.iconss{
+    height: 120px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+.iconss div{
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+    background-color: #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.iconss #fi:hover{
+    background-color: #808080;
+   
+}
+.iconss #se:hover{
+    background-color: #808080;
+   
+}
+.iconss #th:hover{
+    background-color: #808080;
+   
+}
+.line .links h5:hover{
+    color: white;
+    text-decoration: underline;
+    opacity: 1;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.copy-right{
+    width: 92%;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    /* margin: 1rem; */
+    margin-right: 1.3rem;
+    padding-top: 3.5rem;
+}
+.copy-right .clinks{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    letter-spacing: 0.09rem;
+
+}
+.copy-right .clinks h6{
+    opacity: 1;
+    color: rgba(241, 218, 218, 0.953);
+    font-weight: 400;
+    margin-right: 2rem;
+}
+.copy-right .cdlinks{
+    opacity: 0.5;
+    font-weight: 400;
+
+}
+.copy-right .cdlinks:hover{
+  opacity: 1;
+}
+.copy-right .clinks h6:hover{
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    
+}
+
+@media(max-width:1120px){
+    /* .sticky-navbar .db{
+       display: none;
+    } */
+    .music .music3{
+        display: none;
+    }
+    .music .music1{
+        display: none;
+    }
+    .music{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .music .music2{
+        width: 120%
+    }
+
+}
+
+@media(max-width:1000px){
+  .sidebar{
+    display: none;
+  }
+
+}
+
+@media(max-width:990px){
+    .center{
+      display: none;
+    }
+  
+  }
+
+  
+@media(max-width:400px){
+    .music .music2{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+@media(max-width:500px){
+    .music .music2{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main_content .sticky-navbar .arrows .fa-chevron-right{
+        display: none;
+    }
+
+    .main_content .sticky-navbar .badges .hide{
+        display: none;
+    }
+}
+@media(max-width:600px){
+    .music .music2{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media(max-width:400px){
+    .music .music2 .loop{
+        display: none;
+    }
+
+}
+
+@media(max-width:1300px){
+    .library .boxes .box3{
+        display: none;
+    }
+
+}
+
+@media(min-width: 1120px) and (max-width:1165px){
+    .music .music2 .range p{
+        display: none;
+    }
+
+}
+
+/* Font size change*/
+
+html {
+    font-size: 1rem;
+}
+  
+@media(max-width:500px){
+    html{
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 500px) and (max-width:1000px){
+    html{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1001px) and (max-width:1500px){
+    html{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1501px) and (max-width:2000px){
+    html{
+        font-size: 1.1rem;
+    }
+}
+/* @media (min-width: 2001px) and (max-width:2500px){
+    html{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 2501px) and (max-width:3000px){
+    html{
+        font-size: 1rem;
+    }
+} */
+
+@media(max-width: 1125px){
+    .line .links{
+        display: none;
+    }
+}
+
+@media(max-width: 1125px){
+    .line .iconss i{
+        font-size: 2rem;
+    }
+}
+
